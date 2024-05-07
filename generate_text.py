@@ -20,8 +20,8 @@ check_cuda()
 np.random.seed(42)
 torch.manual_seed(42)
 #   Подключаем локальные модели
-model = GPT2LMHeadModel.from_pretrained('ai-forever/rugpt3medium_based_on_gpt2', local_files_only=True)
-tokenizer = GPT2Tokenizer.from_pretrained('ai-forever/rugpt3medium_based_on_gpt2', local_files_only=True)
+model = GPT2LMHeadModel.from_pretrained('ai-forever/rugpt3medium_based_on_gpt2')    #, local_files_only=True)
+tokenizer = GPT2Tokenizer.from_pretrained('ai-forever/rugpt3medium_based_on_gpt2')    #, local_files_only=True)
 #   Переведем работу модели на GPU
 model.cuda()
 #   Закодируем затравку на "язык" модели

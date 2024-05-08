@@ -91,8 +91,7 @@ class GenerateText:
         return self.generated_text
 
     '''Удаляем класс'''
-    def __del__(self):
-        return False
+    def __del__(self): return False
 
 
 # Press the green button in the gutter to run the script.
